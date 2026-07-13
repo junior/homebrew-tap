@@ -1,8 +1,8 @@
 class Skilla < Formula
   desc "Install agent skills (agentskills.io) from git repos — plain bash, no Node"
   homepage "https://junior.github.io/skilla"
-  url "https://github.com/junior/skilla/archive/refs/tags/v0.2.1.tar.gz"
-  sha256 "7b8e983ad97d96dc6e57800846a1d96fe24160f17d089ca7f5017c7db7f75345"
+  url "https://github.com/junior/skilla/archive/refs/tags/v0.3.0.tar.gz"
+  sha256 "22a41b64b9c9a00c40a27725c7b5001b48b7b1214caa833fa715594c67c1d2df"
   license "MIT"
 
   depends_on "jq"
