@@ -1,8 +1,8 @@
 class Skilla < Formula
-  desc "Install agent skills (agentskills.io) from git repos — plain bash, no Node"
+  desc "Install Agent Skills and Agent Plugins from git repos — bash, no Node"
   homepage "https://junior.github.io/skilla"
-  url "https://github.com/junior/skilla/archive/refs/tags/v0.3.0.tar.gz"
-  sha256 "22a41b64b9c9a00c40a27725c7b5001b48b7b1214caa833fa715594c67c1d2df"
+  url "https://github.com/junior/skilla/archive/refs/tags/v0.4.0.tar.gz"
+  sha256 "1e38aa06082f4ba03324b7ceaea36cd42995f81cbbabb8f24beb9f29998d0a39"
   license "MIT"
 
   depends_on "jq"
@@ -16,5 +16,13 @@ class Skilla < Formula
   test do
     assert_match "skilla #{version}", shell_output("#{bin}/skilla --version")
     assert_match "Usage: skilla", shell_output("#{bin}/skilla help")
+
+    # Agent Plugins 1.0.0: scaffold a manifest and check it validates.
+    (testpath/"my-plugin").mkpath
+    system bin/"skilla", "plugin", "init", testpath/"my-plugin"
+    assert_match "agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+                 (testpath/"my-plugin/plugin.json").read
+    assert_match "conformant Agent Plugin",
+                 shell_output("#{bin}/skilla plugin validate #{testpath}/my-plugin")
   end
 end
