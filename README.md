@@ -4,11 +4,13 @@ Homebrew formulae for [junior](https://github.com/junior)'s tools.
 
 ```bash
 brew install junior/tap/skilla
+brew install junior/tap/s3tx
 ```
 
 | Formula | What it is |
 |---------|------------|
 | [`skilla`](https://github.com/junior/skilla) | Install [agent skills](https://agentskills.io/) from git repos — plain bash, no Node |
+| [`s3tx`](https://github.com/junior/s3tx) | Move files in and out of locked-down machines through a private S3 bucket and short-lived presigned URLs; the far end needs only curl |
 
 ## Tap trust
 
