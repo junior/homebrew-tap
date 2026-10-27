@@ -5,12 +5,14 @@ Homebrew formulae for [junior](https://github.com/junior)'s tools.
 ```bash
 brew install junior/tap/skilla
 brew install junior/tap/s3tx
+brew install junior/tap/kcx
 ```
 
 | Formula | What it is |
 |---------|------------|
 | [`skilla`](https://github.com/junior/skilla) | Install [agent skills](https://agentskills.io/) from git repos — plain bash, no Node |
 | [`s3tx`](https://github.com/junior/s3tx) | Move files in and out of locked-down machines through a private S3 bucket and short-lived presigned URLs; the far end needs only curl |
+| [`kcx`](https://github.com/junior/kcx) | One kubeconfig file per cluster: a context and namespace switcher, cluster profiles that fetch a kubeconfig by short name through your platform's command with a brokered secret, and a read-only shell for AI tools; built from source, and its release workflow keeps this formula current |
 
 ## Tap trust
 
