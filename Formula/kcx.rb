@@ -1,8 +1,8 @@
 class Kcx < Formula
   desc "Kubeconfig file per cluster: contexts, namespaces, profiles, a read-only shell"
   homepage "https://github.com/junior/kcx"
-  url "https://github.com/junior/kcx/archive/refs/tags/v2.1.0.tar.gz"
-  sha256 "1bf99db56a85cfcaed529010ad27d8eca89bcacc657dff5e5876ace0179ab9db"
+  url "https://github.com/junior/kcx/archive/refs/tags/v2.1.1.tar.gz"
+  sha256 "8ce8e6863ffedd729ccee2f67f5405079a7626124fed959ceb0296f4640e83f3"
   license "MIT"
   head "https://github.com/junior/kcx.git", branch: "main"
 
