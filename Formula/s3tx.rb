@@ -1,8 +1,8 @@
 class S3tx < Formula
   desc "Move files through a private S3 bucket with short-lived presigned URLs"
   homepage "https://github.com/junior/s3tx"
-  url "https://github.com/junior/s3tx/archive/refs/tags/v1.3.0.tar.gz"
-  sha256 "c6a9c1568501ef6ae20463e7ba2ff596bf9ec0c901bcc991c3c16b8ee4134bf3"
+  url "https://github.com/junior/s3tx/archive/refs/tags/v1.4.0.tar.gz"
+  sha256 "a3de1334446d6dac5b304070e08d1d7f35200d09cad863cc1251ce4fdeab4839"
   license "MIT"
 
   # s3tx is a single PEP 723 script: uv provides Python and boto3 on its first run.
