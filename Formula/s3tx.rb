@@ -12,6 +12,7 @@ class S3tx < Formula
     bin.install "s3tx"
     # The least-privilege IAM policy that the one-time AWS setup in the README uses.
     pkgshare.install "iam-policy.json"
+    zsh_completion.install "completions/_s3tx"
   end
 
   test do
@@ -19,5 +20,6 @@ class S3tx < Formula
     assert_equal "s3tx #{version}", shell_output("#{bin}/s3tx --version").strip
     assert_match "usage: s3tx", shell_output("#{bin}/s3tx help")
     assert_path_exists pkgshare/"iam-policy.json"
+    assert_path_exists zsh_completion/"_s3tx"
   end
 end
